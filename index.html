@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens Rodriguez</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <ul>
+                <li><a href="#" id="peru">PERÚ</a></li>
+                <li><a href="#" id="bolivia">BOLIVIA</a></li>
+                <li><a href="#" id="chile">CHILE</a></li>
+                <li><a href="#" id="equador">EQUADOR</a></li>
+            </ul>
+        </nav>
+        <div class="info">
+            <h2 id="titulo"> MACHU PICCHU, PERU</h2>
+            <p id="conteudo">Também conhecida como a cidade perdida dos Incas, as construções pré-colombianas foram descoberta apenas no começo do século 20 e hoje são um dos símbolos do Peru.</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non voluptates velit dicta rem soluta totam inventore dolores deleniti, aliquam autem nesciunt, eos aut quia obcaecati, natus porro maiores odio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quia repellat cumque consectetur. Eligendi iste dolor, assumenda eum laudantium molestias ut nisi libero ratione labore dolores, odit excepturi unde tempora. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nostrum impedit mollitia, doloribus ut quae perspiciatis explicabo animi consequuntur ducimus hic excepturi in rem reprehenderit fuga! Est nesciunt unde vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam, cumque, eveniet quis exercitationem doloremque veniam rem eos ducimus quas est repellat vero delectus maiores laborum dolore, consequatur nostrum. Deleniti.
+
+            </p>
+        </div>
+    </div>
+    <script>
+        var header = document.getElementById("header");
+        var pe = document.getElementById("peru");
+        var bo = document.getElementById("bolivia");
+        var ch = document.getElementById("chile");
+        var eq = document.getElementById("equador");
+        var titulo = document.getElementById("titulo");
+        var conteudo = document.getElementById("conteudo");
+
+        pe.onclick = function(){
+            header.style.backgroundImage = "url(../Imagens/MACHU-PICCHU-PERU.jpg)";
+            titulo.innerHTML = "MACHU PICCHU, PERU"
+            conteudo.innerHTML ="Também conhecida como a cidade perdida dos Incas, as construções pré-colombianas foram descoberta apenas no começo do século 20 e hoje são um dos símbolos do Peru."
+        }
+        bo.onclick = function(){
+            header.style.backgroundImage = "url(../Imagens/SALAR-DE-UYUNI-BOLÍVIA.jpg)";
+            titulo.innerHTML = "SALAR DE UYUNI, BOLÍVIA"
+            conteudo.innerHTML ="Maior planície de sal do mundo, está localizada a mais de 3.600m de altitude, perto da borda da Cordilheira dos Andes."
+        }
+        ch.onclick = function(){
+            header.style.backgroundImage = "url(../Imagens/DESERTO-DO-ATACAMA-CHILE.jpg)";
+            titulo.innerHTML = "DESERTO DO ATACAMA, CHILE"
+            conteudo.innerHTML = "Localizado ao norte do Chile, o Deserto do Atacama é o mais alto e mais árido do mundo. A principal cidade da região é San Pedro de Atacama, onde visitantes montam base para conhecer o Atacama."
+        }
+        eq.onclick = function(){
+            header.style.backgroundImage = "url(../Imagens/VULCAO-QUILOTOA-EQUADOR.jpg)";
+            titulo.innerHTML = "VULCÃO QUILOTOA, EQUADOR"
+            conteudo.innerHTML = "Nesse vulcão equatoriano, a cratera localizada a mais de 3.800m de altitude trocou a lava por águas azuis."
+        }
+
+    </script>
+</body>
+</html>
